@@ -1,0 +1,1262 @@
+{
+	"info": {
+		"_postman_id": "dd5a6579-6062-40c0-8bf8-fc6a2b0ffcb0",
+		"name": "AccountingService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46841540",
+		"_collection_link": "https://shohzodmardonov.postman.co/workspace/Shohzod-Mardonov's-Workspace~4a52eaec-bfbd-4dae-8e0e-896cddfe891c/collection/46841540-dd5a6579-6062-40c0-8bf8-fc6a2b0ffcb0?action=share&source=collection_link&creator=46841540"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "getAllClient",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/client",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addClient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Toshkent\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/client",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateClient",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Uchtepa\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/client/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteClient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/client/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneClient",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Uchtepa\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/client/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"client",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "getAllAdmin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addAdmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAdmin",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shoh\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/admin/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAdmin",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/admin/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneAdmin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Uchtepa\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/admin/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employer",
+			"item": [
+				{
+					"name": "getAllEmployer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employer",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addEmployer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\",\r\n    \"experience_year\": 3,\r\n    \"salary\": 1000,\r\n    \"start_work_day\": \"2025-09-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employer",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEmployer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"first_name\": \"Shoh\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\",\r\n    \"experience_year\": 3,\r\n    \"salary\": 1000,\r\n    \"start_work_day\": \"2025-09-16\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteEmployer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneEmployer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Uchtepa\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/employer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "getAllNews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/news",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addNews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Shohzod\",\r\n    \"describtion\":\"Narxlar ko'tariladi\",\r\n    \"adminId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/news",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateNews",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Shohzod\",\r\n    \"describtion\":\"Narxlar tushadi\",\r\n    \"adminId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/news/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteNews",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/news/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneNews",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Uchtepa\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/news/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"news",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Works",
+			"item": [
+				{
+					"name": "getAllWorks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/work",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"work"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addWork",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Backend\",\r\n    \"contractId\":7,\r\n    \"employerId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/work",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"work"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateWork",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Frontend\",\r\n    \"contractId\":7,\r\n    \"employerId\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/work/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"work",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteWork",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/work/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"work",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneWork",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Shohzod\",\r\n    \"last_name\": \"Mardonov\",\r\n    \"phone_number\": \"12345673322\",\r\n    \"address\": \"Uchtepa\",\r\n    \"email\": \"shohmar@mail.com\",\r\n    \"passport_ser\": \"AB\",\r\n    \"passport_number\": \"4455566\",\r\n    \"password\": \"1234\",\r\n    \"confirm_password\": \"1234\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/work/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"work",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contract",
+			"item": [
+				{
+					"name": "getAllContract",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\":\"Botir Qodirov\",\r\n    \"phone_number\":\"1234567\",\r\n    \"email\":\"botir@mail.uz\",\r\n    \"address\":\"Toshkent\",\r\n    \"location\":\"13245,13245\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "localhost:3000/api/contract",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createContract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/contract",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateContract",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/contract/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contract",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteContract",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/contract/6",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contract",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOneContract",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/contract/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"contract",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PaymentType",
+			"item": [
+				{
+					"name": "getAllPaymentType",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\":\"Botir Qodirov\",\r\n    \"phone_number\":\"1234567\",\r\n    \"email\":\"botir@mail.uz\",\r\n    \"address\":\"Toshkent\",\r\n    \"location\":\"13245,13245\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPaymentType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"click\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePaymentType",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Paynet\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePaymentType",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOnePaymentType",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PaymentTypeContract",
+			"item": [
+				{
+					"name": "getAllPaymentTypeContract",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"45454\",\r\n    \"signed_date\": \"2025-09-15\",\r\n    \"paymentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type_contract",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type_contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPaymentTypeContract",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"45454\",\r\n    \"signed_date\": \"2025-09-15\",\r\n    \"paymentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type_contract",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type_contract"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePaymentTypeContract",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"454\",\r\n    \"signed_date\": \"2025-09-15\",\r\n    \"paymentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type_contract/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type_contract",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePaymentTypeContract",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type_contract/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type_contract",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOnePaymentTypeContract",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment_type_contract/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment_type_contract",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "getAllPayment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\":\"Botir Qodirov\",\r\n    \"phone_number\":\"1234567\",\r\n    \"email\":\"botir@mail.uz\",\r\n    \"address\":\"Toshkent\",\r\n    \"location\":\"13245,13245\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createPayment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"summa\": 1000,\r\n    \"payment_date\": \"2025-09-15\",\r\n    \"contractId\": 7,\r\n    \"paymentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatePayment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"summa\": 500,\r\n    \"payment_date\": \"2025-09-15\",\r\n    \"contractId\": 7,\r\n    \"paymentTypeId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePayment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getOnePayment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"number\": \"mvklfdfdmlfvmf\",\r\n    \"date_contract\": \"2025-09-15\",\r\n    \"exp_date\": \"2025-10-10\",\r\n    \"summa\": 1000,\r\n    \"clientId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/payment/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"payment",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
