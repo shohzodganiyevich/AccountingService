@@ -1,12 +1,16 @@
 const express = require("express");
 const config = require("config");
+const cookieParser = require("cookie-parser");
 const app = express();
 app.use(express.json());
+app.use(cookieParser());
 const PORT = config.get("port") ?? 3030;
 const sequelize = require("./config/db");
 const mainRoute = require("./routes");
+const errorHandling = require("./middlewares/errors/error.handling");
 
 app.use("/api", mainRoute);
+app.use(errorHandling)
 
 async function start() {
   try {

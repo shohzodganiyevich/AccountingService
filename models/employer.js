@@ -37,6 +37,10 @@ const Employer = sequelize.define("employer", {
     type: DataTypes.DATE,
     allowNull: true,
   },
+  token: {
+    type: DataTypes.TEXT,
+    allowNull: true,
+  },
 });
 
 module.exports = Employer;

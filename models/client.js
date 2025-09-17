@@ -39,6 +39,10 @@ const Client = sequelize.define("client", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  token: {
+    type: DataTypes.TEXT,
+    allowNull: true,
+  },
 });
 
 module.exports = Client;
